@@ -1,4 +1,4 @@
-﻿package com.roadsense.logger.model
+﻿package com.roadsense.logger.core.data.models
 
 data class EnhancedData(
     val currentSpeed: Float = 0f,

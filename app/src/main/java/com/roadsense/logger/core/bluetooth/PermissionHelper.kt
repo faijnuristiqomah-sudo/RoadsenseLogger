@@ -1,4 +1,4 @@
-package com.roadsense.logger
+﻿package com.roadsense.logger.core.bluetooth
 
 import android.Manifest
 import android.content.Context

@@ -48,8 +48,7 @@ android {
     buildFeatures {
         viewBinding = true
         buildConfig = true
-        // COMPOSE DISABLED - Kita pakai XML
-        compose = false
+        compose = false // XML only
     }
 }
 
@@ -60,22 +59,22 @@ ksp {
 }
 
 dependencies {
-    // Core Android - XML Based UI
+    // Core Android
     implementation("androidx.core:core-ktx:1.13.0")
     implementation("androidx.appcompat:appcompat:1.7.0")
     implementation("com.google.android.material:material:1.12.0")
     implementation("androidx.constraintlayout:constraintlayout:2.1.4")
 
-    // Lifecycle
+    // Lifecycle (pakai versi terbaru)
     implementation("androidx.lifecycle:lifecycle-viewmodel-ktx:2.8.7")
     implementation("androidx.lifecycle:lifecycle-livedata-ktx:2.8.7")
     implementation("androidx.lifecycle:lifecycle-runtime-ktx:2.8.7")
 
-    // Navigation
+    // Navigation (pakai versi terbaru)
     implementation("androidx.navigation:navigation-fragment-ktx:2.8.5")
     implementation("androidx.navigation:navigation-ui-ktx:2.8.5")
 
-    // Room Database
+    // Room Database (pakai ksp, versi terbaru)
     implementation("androidx.room:room-runtime:2.6.1")
     implementation("androidx.room:room-ktx:2.6.1")
     ksp("androidx.room:room-compiler:2.6.1")
@@ -95,6 +94,10 @@ dependencies {
 
     // PDF Export
     implementation("com.itextpdf:itext7-core:7.2.5")
+
+    // File Export (Apache POI)
+    implementation("org.apache.poi:poi:5.2.3")
+    implementation("org.apache.poi:poi-ooxml:5.2.3")
 
     // Image Picker
     implementation("com.github.dhaval2404:imagepicker:2.1")
@@ -116,7 +119,7 @@ configurations.all {
     exclude(group = "xalan", module = "xalan")
     exclude(group = "commons-logging", module = "commons-logging")
 
-    // EXCLUDE SEMUA COMPOSE LIBRARIES
+    // Exclude semua Compose libraries
     exclude(group = "androidx.compose.ui")
     exclude(group = "androidx.compose.material")
     exclude(group = "androidx.compose.material3")

@@ -1,4 +1,4 @@
-package com.roadsense.logger
+﻿package com.roadsense.logger.core.bluetooth
 
 import android.annotation.SuppressLint
 import android.bluetooth.*

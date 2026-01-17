@@ -1,7 +1,11 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">Roadsense Logger</string>
     <string name="title_dashboard">Dashboard</string>
     <string name="title_speed">Speed</string>
     <string name="title_settings">Settings</string>
+    <string name="title_home">Raw Data</string>
+    <string name="title_survey">Survey</string>
+    <string name="title_results">Results</string>
+    <string name="title_reports">Reports</string>
 </resources>
